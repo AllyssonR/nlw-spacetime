@@ -1,8 +1,4 @@
 {
-  "compilerOptions": {
-    "types": [
-      "nativewind/types"
-    ]
-  },
+  "compilerOptions": { "types": ["nativewind/types"] },
   "extends": "expo/tsconfig.base"
 }
