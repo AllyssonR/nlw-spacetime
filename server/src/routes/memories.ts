@@ -30,6 +30,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
     return memory
   })
   app.post('/memories', async (request) => {
+    await request.jwtVerify()
     const bodySchema = z.object({
       content: z.string(),
       coverUrl: z.string(),
